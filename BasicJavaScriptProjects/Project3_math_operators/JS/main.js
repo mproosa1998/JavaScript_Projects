@@ -29,7 +29,7 @@ function MOD(){ // modular
 }
 
 function NEG(){  // negation
-    ned = 3;
+    neg = 3;
     document.getElementById("Math").innerHTML = "Total: " + -neg;
 }
 
