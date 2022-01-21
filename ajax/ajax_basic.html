@@ -19,7 +19,7 @@
 			ajax.open('GET','content.html');
 			//define callback method
 			ajax.onreadystatechange = function(){
-				if (ajax.readyState = 4){
+				if (ajax.readyState == 4){
 					document.getElementById('content').innerHTML = ajax.responseText;
 				}
 			}
