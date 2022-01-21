@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Final Frontier</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/one_page_website.css">
+		<script src="js/one_page_website.js"></script>
+	</head>
+	<body>
+		<!-- NAV -->
+		<div>
+			<div>
+					<a href="#home" id="link">HOME</a>&nbsp|&nbsp
+					<a href="#gallery">GALLERY</a>&nbsp|&nbsp
+					<a href="#video">VIDEO</a>&nbsp|&nbsp
+					<a href="#contact">CONTACT FORM</a>
+			</div>
+		</div>
+		<!--END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>
+						<h1>SPACE</h1>
+						<br>The Final Frontier
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--END HOME-->
+		
+		<!--GALLERY-->
+		<section id ="gallery">
+			<div>
+				<h1>Gallery</h1>
+				<div>
+				
+					<!--PHOTO-CONTAINER 1-->
+					<div class="column">
+						<div>
+							<img src="./images/image_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="IMAGE 1 FAILED">
+						</div>
+					</div>
+					<!--END PHOTO-CONTAINER 1-->
+					
+					<!--PHOTO-CONTAINER 2-->
+					<div class="column">
+						<div>
+							<img src="./images/image_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="IMAGE 2 FAILED">
+						</div>
+					</div>
+					<!--END PHOTO-CONTAINER 2-->
+					
+					<!--PHOTO-CONTAINER 3-->
+					<div class="column">
+						<div>
+							<img src="./images/image_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="IMAGE 3 FAILED">
+						</div>
+					</div>
+					<!--END PHOTO-CONTAINER 3-->
+					
+					<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="images/image_1.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="images/image_2.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="images/image_3.jpg" style="width:100%">
+						</div>
+					
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+					
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="lightbox" src="images/image_1.jpg" onclick="currentSlide(1)" alt="Blurry Image 1">
+						</div>
+						<div class="column">
+							<img class="lightbox" src="images/image_2.jpg" onclick="currentSlide(2)" alt="Blurry Image 2">
+						</div>
+						<div class="column">
+							<img class="lightbox" src="images/image_3.jpg" onclick="currentSlide(3)" alt="Blurry Image 3">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END GALLERY-->
+		
+		<!--VIDEO-->
+		<section id ="video">
+			<div>
+				<h1>VIDEO</h1>
+				<div>
+				
+					<!--VIDEO-CONTAINER 1-->
+					<div>
+						<div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/QE2q3W36_eM" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+								clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen></iframe>
+						</div>
+					</div>
+					<!--END VIDEO-CONTAINER 1-->
+				</div>
+			</div>
+		</section>
+		<!--END VIDEO-->
+		
+		<!--RSVP-->
+		<section>
+			<div id="contact">
+				<h1>Contact Form</h1>
+				<div>
+					</h2>
+					<p>
+						Please provide us with your basic contact information.
+					</p>
+					<div>
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="First Name">
+							<input class="rsvp" type="text" value="Last Name">
+							<br><br>
+							<input class="rsvp" type="text" value="Email Address">
+							<input class="rsvp" type="text" value="Phone Number">
+							<div class="form-spacer">
+								<label "terms">Terms and Conditions</label>
+							</div>
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!--END RSVP-->
+		
+		<!--FOOTER-->
+		
+		<div>
+			<h4>www.onepage.com &nbsp;|&nbsp; &copy; 2022</h4>
+		</div>
+		<!--END FOOTER-->
+		
+	</body>
+</html>
